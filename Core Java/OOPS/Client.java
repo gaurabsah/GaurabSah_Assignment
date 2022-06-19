@@ -29,7 +29,7 @@ class labour extends employee{
         return labour_salary+overtime;
     }
 }
-public class client {
+public class Client {
     public static void main(String[] args) {
         manager m=new manager(500,100);
         labour l=new labour(150,40);
