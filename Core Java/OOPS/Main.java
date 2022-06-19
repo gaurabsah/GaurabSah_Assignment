@@ -1,32 +1,32 @@
-abstract class shape {
+abstract class Shape {
     abstract void draw();
 }
-class line extends shape {
+class Line extends Shape {
     public void draw(){
         System.out.println("Line is drawn");
     }
 }
-class rectangle extends shape {
+class Rectangle extends Shape {
     public void draw(){
         System.out.println("rectangle is drawn");
     }
 }
-class cube extends shape{
+class Cube extends Shape{
     public void draw(){
         System.out.println("cube is drawn");
     }
 }
-class square extends shape{
+class Square extends Shape{
     public void draw(){
         System.out.println("square is drawn");
     }
 }
-public class main{
+public class Main{
     public static void main(String[] args) {
-        shape l=new line();
-        shape r=new rectangle();
-        shape c=new cube();
-        shape s=new square();
+        Shape l=new line();
+        Shape r=new rectangle();
+        Shape c=new cube();
+        Shape s=new square();
         draw_All(l);
         draw_All(r);
         draw_All(c);
