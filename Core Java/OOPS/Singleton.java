@@ -8,12 +8,12 @@ public class Singleton {
     }
 }
 
-class ex{
-    static ex obj= new ex();
-    private ex(){
+class Ex{
+    static Ex obj= new Ex();
+    private Ex(){
 
     }
-    public static ex return_obj(){
+    public static Ex return_obj(){
         return obj;
     }
 }
