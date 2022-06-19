@@ -1,10 +1,10 @@
-abstract class bank{
+abstract class Bank{
    abstract public void disp();
 }
-class savings_Account extends bank{
+class Savings_Account extends Bank{
     double bal;
     double fd;
-    public savings_Account(double bal,double fd){
+    public Savings_Account(double bal,double fd){
         this.bal=bal;
         this.fd=fd;
     }
@@ -15,10 +15,10 @@ class savings_Account extends bank{
         return bal+fd;
     }
 }
-class current_Account extends bank{
+class Current_Account extends Bank{
     double bal;
     double cc;
-    public current_Account(double bal,double cc){
+    public Current_Account(double bal,double cc){
         this.bal=bal;
         this.cc=cc;
     }
@@ -30,10 +30,10 @@ class current_Account extends bank{
     }
 }
 
-public class mod {
+public class Mod {
     public static void main(String[] args) {
-        savings_Account s=new savings_Account(30000,4000);
-        current_Account c=new current_Account(500000,20000);
+        Savings_Account s=new savings_Account(30000,4000);
+        Current_Account c=new current_Account(500000,20000);
         s.disp();
         c.disp();
         double totalAmount=s.get()+c.get();
