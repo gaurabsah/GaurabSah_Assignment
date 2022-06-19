@@ -1,5 +1,5 @@
 
-public class armstrong2 {
+public class Armstrong2 {
     public static void main(String[] args) {
         for (int n = 100; n <1000; n++) {
             int sum=0;
