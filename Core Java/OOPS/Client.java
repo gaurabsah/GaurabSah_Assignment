@@ -1,7 +1,7 @@
-abstract class employee{
+abstract class Employee{
 abstract public void salary();
 }
-class manager extends employee{
+class Manager extends Employee{
     int sal,incentive;
     public manager(int sal,int incentive){
         this.sal=sal;
@@ -14,11 +14,11 @@ class manager extends employee{
         return sal+incentive;
     }
 }
-class labour extends employee{
+class Labour extends Employee{
     int overtime;
     int labour_salary;
 
-    public labour(int labour_salary,int overtime){
+    public Labour(int labour_salary,int overtime){
         this.labour_salary=labour_salary;
         this.overtime=overtime;
     }
